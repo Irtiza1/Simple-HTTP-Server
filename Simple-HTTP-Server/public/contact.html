@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Contact Form</h1>
-    <form method="POST" action="/contact">
-        <label>Name: <input type="text" name="name" required></label><br>
-        <label>Email: <input type="email" name="email" required></label><br>
-        <input type="submit" value="Submit">
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-blue-600 text-white p-4 text-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" class="w-20 mx-auto mb-2 rounded-full shadow-md">
+    <h1 class="text-2xl font-bold">Contact Us</h1>
+  </header>
+  <nav class="bg-gray-200 py-2 text-center space-x-4 text-blue-700 font-semibold">
+    <a href="/" class="hover:underline">Home</a>
+    <a href="/about.html" class="hover:underline">About</a>
+    <a href="/contact.html" class="hover:underline">Contact</a>
+    <a href="/team.html" class="text-blue-600 hover:underline font-semibold">Team</a>
+
+  </nav>
+  
+  <main class="max-w-xl mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg">
+    <form method="POST" action="/contact" class="space-y-4">
+      <div>
+        <label class="block font-semibold">Name</label>
+        <input type="text" name="name" required class="w-full border border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label class="block font-semibold">Email</label>
+        <input type="email" name="email" required class="w-full border border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label class="block font-semibold">Message</label>
+        <textarea name="message" rows="4" required class="w-full border border-gray-300 rounded p-2"></textarea>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit</button>
     </form>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 mt-10">&copy; 2025 Simple Server</footer>
 </body>
 </html>
-

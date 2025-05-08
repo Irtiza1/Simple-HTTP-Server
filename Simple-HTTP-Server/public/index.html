@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Welcome to Our Simple Web Server</h1>
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about.html">About</a> |
-        <a href="/contact.html">Contact</a>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-blue-600 text-white p-4 text-center text-2xl font-bold">Welcome to Our Simple Web Server</header>
+  <main class="max-w-xl mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg text-center space-y-4">
+    <p class="text-lg">Explore our pages using the links below.</p>
+    <nav class="space-x-4">
+      <a href="/" class="text-blue-600 hover:underline font-semibold">Home</a>
+      <a href="/about.html" class="text-blue-600 hover:underline font-semibold">About</a>
+      <a href="/contact.html" class="text-blue-600 hover:underline font-semibold">Contact</a>
+      <a href="/team.html" class="text-blue-600 hover:underline font-semibold">Team</a>
     </nav>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 mt-10">&copy; 2025 Simple Server</footer>
 </body>
 </html>
-
